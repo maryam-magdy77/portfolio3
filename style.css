@@ -1,0 +1,127 @@
+/* تنسيقات عامة وتوحيد الألوان */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-light: #ecf0f1;
+    --bg-color: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    direction: rtl; /* لغة الموقع عربية */
+}
+
+/* الهيدر والتنقل (Header & Nav) */
+header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav {
+    background: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background 0.3s, transform 0.2s; /* Hover Effects */
+}
+
+nav ul li a:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* المحتوى الرئيسي */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+/* الجداول (Courses Table) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tr:nth-child(even) { background-color: #f9f9f9; }
+
+tr:hover { background-color: #f1f1f1; } /* Table hover */
+
+/* النماذج (Forms) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+button:hover { background: var(--primary-color); }
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+    margin-top: 20px;
+}
+
+/* التصميم الاستجابي (Responsive Layout) */
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; }
+    nav ul li { text-align: center; border-bottom: 1px solid #455a64; }
+    main { margin: 10px; width: auto; }
+}
