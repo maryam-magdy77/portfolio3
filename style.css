@@ -75,6 +75,7 @@ main {
 section button {
     display: flex;
     justify-self:center;
+    align-self: center;
 }
 /* الجداول (Courses Table) */
 table {
