@@ -72,7 +72,10 @@ main {
     text-align: center;
     align-items: start;
 }
-.
+section button {
+    display: flex;
+    justify-self:center;
+}
 /* الجداول (Courses Table) */
 table {
     width: 100%;
