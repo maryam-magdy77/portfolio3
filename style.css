@@ -13,7 +13,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: var(--bg-color);
-    direction: rtl; /* لغة الموقع عربية */
+    direction: ltr; 
 }
 
 /* الهيدر والتنقل (Header & Nav) */
