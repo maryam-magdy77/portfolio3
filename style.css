@@ -60,8 +60,19 @@ main {
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.section1 {
+    display: block;
+}
+.section1 h2 , .section1 p{
+    text-align: center;
+    align-items: start;
+}
+.
 /* الجداول (Courses Table) */
 table {
     width: 100%;
@@ -88,6 +99,9 @@ tr:hover { background-color: #f1f1f1; } /* Table hover */
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     gap: 15px;
 }
 
@@ -96,6 +110,9 @@ input, textarea, select {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
